@@ -1,0 +1,132 @@
+﻿<Window x:Class="RB_SO_PI1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RB_SO_PI1"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:MainWindowMV x:Key="MV"/>
+    </Window.Resources>
+    
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="L1"
+            Grid.Column="0" 
+            Grid.Row="0"
+            Background="red"
+            Foreground="blue"
+            />
+        <ProgressBar
+            x:Name="L1Bar"
+            Grid.Column="1"
+            Grid.Row="0"
+            Minimum="0"
+            Maximum="100"
+            Background="Black"
+            />
+        
+        
+        <Label x:Name="L2"
+            Grid.Column="0" 
+            Grid.Row="1"
+            Background="red"
+            Foreground="blue"
+            />
+        <ProgressBar
+            x:Name="L2Bar"
+            Grid.Column="1"
+            Grid.Row="1"
+            Minimum="0"
+            Maximum="100"
+            Background="Black"
+            />
+        <Label x:Name="L3"
+            Grid.Column="0" 
+            Grid.Row="2"
+            Background="red"
+            Foreground="blue"
+            />
+        <ProgressBar
+            x:Name="L3Bar"
+            Grid.Column="1"
+            Grid.Row="2"
+            Minimum="0"
+            Maximum="100"
+            Background="Black"
+            />
+        <Label x:Name="L4"
+            Grid.Column="0" 
+            Grid.Row="3"
+            Background="red"
+            Foreground="blue"
+            />
+        <ProgressBar
+            x:Name="L4Bar"
+            Grid.Column="1"
+            Grid.Row="3"
+            Minimum="0"
+            Maximum="100"
+            Background="Black"
+            />
+        <Label x:Name="L5"
+            Grid.Column="0" 
+            Grid.Row="4"
+            Background="red"
+            Foreground="blue"
+            />
+        <ProgressBar
+            x:Name="L5Bar"
+            Grid.Column="1"
+            Grid.Row="4"
+            Minimum="0"
+            Maximum="100"
+            Background="Black"
+            />
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="6"
+            Content="START"
+            DataContext="{StaticResource MV}"
+            Command="{Binding startApp}"
+            Background="SlateGray"
+            Foreground="Wheat"
+            FontSize="40"
+            FontFamily="Courier New"
+            />
+
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="WARNING STARTING APLICATION MAY LEAD TO EPILEPSY ATATCK, BECAUSE OF FLICKERING LIGHTS"
+            FontSize="30"
+            TextWrapping="Wrap"
+            FontWeight="DemiBold"
+            FontFamily="Courier New"
+            Foreground="Wheat"
+            Background="Black"
+            VerticalAlignment="Center"
+            TextAlignment="Center"
+            
+            />
+
+
+
+    </Grid>
+</Window>
